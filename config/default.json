@@ -1,0 +1,6 @@
+{
+	"mongoURI": "mongodb+srv://gallery123:gallery123@cluster0-nqsf6.mongodb.net/<dbname>?retryWrites=true&w=majority",
+	"jwtSecret": "mysecrettoken",
+	"githubClientId": "90c0fd0d473b5ea3a5df",
+	"githubSecret": "90dda751551f0e6611b230858e9178666ead2c35"
+}

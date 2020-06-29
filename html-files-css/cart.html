@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+			integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" />
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" />
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/v4-shims.css" />
+		<link rel="stylesheet" href="style.css" />
+		<title>Frieda's Gallery</title>
+	</head>
+	<body>
+		<header id="header">
+			<nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+				<a class="navbar-brand" href="index.html">Frieda's Gallery</a>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-toggle="collapse"
+					data-target="#navbarNav"
+					aria-controls="navbarNav"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a class="nav-link" href="gallery.html">Gallery</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="comments.html">Comments</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="login.html"><i class="fas fa-user mr-2"></i>Log in</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="cart.html"
+								><i class="fas fa-shopping-cart mr-2"></i><span>2</span>Cart
+							</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+		<div>
+			<img id="friedaPic" src="img/photo.jpg" class="mx-auto d-block" alt="Frieda Silva" />
+		</div>
+
+		<main>
+			<h2>Shoping Cart</h2>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-2"></div>
+					<div class="col-lg-8 shopCart">
+						<div class="form">
+							<div class="row carttitle">
+								<table style="width: 100%;">
+									<tr>
+										<th>Title</th>
+										<th>Image</th>
+										<th><i class="fas fa-trash-alt"></i></th>
+										<th>Price</th>
+									</tr>
+									<tr>
+										<td>Self Portrail</td>
+										<td><img src="img/f1.jpg" alt="picture f1" /></td>
+										<td><button class="bnt-sm btn-danger">remove</button></td>
+										<td>$ 100.00</td>
+									</tr>
+									<tr>
+										<td>Self Portrail</td>
+										<td><img src="img/f10.jpg" alt="picture f1" /></td>
+										<td><button class="bnt-sm btn-danger">remove</button></td>
+										>
+										<td>$ 80.00</td>
+									</tr>
+									<hr />
+								</table>
+							</div>
+							<div class="subtotal">
+								<ul>
+									<li><span class="label">Subtotal</span><span class="value">$180.00</span></li>
+									<li><span class="label">Shipping</span><span class="value">$21.00</span></li>
+									<li><span class="label">Tax</span><span class="value">$8.00</span></li>
+									<li><span class="label">Subtotal</span><span class="value">$209.00</span></li>
+								</ul>
+							</div>
+							<hr />
+						</div>
+						<div>
+							<button type="submit" class="btn btn-success btn-block">Check Out</button>
+						</div>
+					</div>
+					<div class="col-lg-2"></div>
+				</div>
+				<div class="row">
+					<div class="col-lg-2"></div>
+					<div class="col-lg-8">
+						<div class="form checkOut">
+							<section class="form__billing">
+								<div class="sections">
+									<div class="box billing">2</div>
+									<span>Billing Address</span>
+								</div>
+								<div class="shipping--form">
+									<form class="form--shipping" action="">
+										<div class="row one">
+											<div class="address">
+												<label for="address-one">Address Line 1</label>
+												<input
+													placeholder="e.g. 1 Infinite Loop"
+													id="address-one"
+													type="text"
+												/>
+											</div>
+											<div class="address-two">
+												<label for="address-two">Address Line 2</label>
+												<input id="address-two" type="text" />
+											</div>
+										</div>
+										<div class="row two">
+											<div class="city">
+												<label for="city">City</label>
+												<input placeholder="e.g. Cupertino" id="city" type="text" />
+											</div>
+											<div class="state">
+												<label for="state">State / Province / Region</label>
+												<input placeholder="e.g. California" id="state" type="text" />
+											</div>
+										</div>
+										<div class="row three">
+											<div class="zip">
+												<label for="zip">Zip / Postal Code</label>
+												<input placeholder="e.g. 95014" id="zip" type="text" />
+											</div>
+											<div class="country">
+												<label for="country">Country</label>
+												<input placeholder="e.g. U.S.A" id="country" type="text" />
+											</div>
+										</div>
+									</form>
+								</div>
+							</section>
+							<section class="form__shipping">
+								<div class="sections">
+									<div class="box">3</div>
+									<span>Shipping Address</span>
+								</div>
+								<div class="shipping--form">
+									<form class="form--shipping" action="">
+										<div class="row one">
+											<div class="address">
+												<label for="address-one">Address Line 1</label>
+												<input placeholder="" id="address-one" type="text" />
+											</div>
+											<div class="address-two">
+												<label for="address-two">Address Line 2</label>
+												<input id="address-two" type="text" />
+											</div>
+										</div>
+										<div class="row two">
+											<div class="city">
+												<label for="city">City</label>
+												<input placeholder="" id="city" type="text" />
+											</div>
+											<div class="state">
+												<label for="state">State / Province / Region</label>
+												<input placeholder="" id="state" type="text" />
+											</div>
+										</div>
+										<div class="row three">
+											<div class="zip">
+												<label for="zip">Zip / Postal Code</label>
+												<input placeholder="" id="zip" type="text" />
+											</div>
+											<div class="country">
+												<label for="country">Country</label>
+												<input placeholder="" id="country" type="text" />
+											</div>
+										</div>
+									</form>
+								</div>
+							</section>
+							<div class="form__question">
+								<input type="checkbox" />
+								<p>Is your shipping address the same as your billing address ?</p>
+							</div>
+							<div class="form__confirmation">
+								<button>Confirm Information</button>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-2"></div>
+				</div>
+			</div>
+		</main>
+		<footer>
+			<p>Desing by: CW4A © 2020 Copyright</p>
+			<p><a href="mailto:ssilvasweb@gmail.com">ssilvasweb@gmail.com</a></p>
+		</footer>
+		<script
+			src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+			integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+			integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+			integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+			crossorigin="anonymous"
+		></script>
+	</body>
+</html>

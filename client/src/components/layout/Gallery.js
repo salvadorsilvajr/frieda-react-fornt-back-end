@@ -8,9 +8,9 @@ import f20 from '../../img/f20.jpg';
 
 const Gallery = () => {
 	return (
-		<div classNameName="gallery" id="gallery">
+		<div className="gallery" id="gallery">
 			<h2>Some Art Work</h2>
-			<div classNameName="container">
+			<div className="container">
 				<div className="row">
 					<div className="col-lg-4 col-md-6 col-sm-12 mb-2">
 						<div className="card">

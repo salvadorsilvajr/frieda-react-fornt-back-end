@@ -5,7 +5,7 @@ import { connect } from "react-redux";
 import PropTypes from "prop-types";
 import { logout } from "../../actions/auth";
 
-const Header = ({ auth: { isAuthenticated, loading }, logout }) => {
+const Header = ({ auth: { isAuthenticated, loading, user }, logout }) => {
   const authLinks = (
     <div
       className='collapse navbar-collapse justify-content-end'
@@ -132,7 +132,13 @@ const Header = ({ auth: { isAuthenticated, loading }, logout }) => {
             <span className='navbar-toggler-icon'></span>
           </button>
           {!loading && (
-            <Fragment>{isAuthenticated ? authLinks : guessLinks}</Fragment>
+            <Fragment>
+              {!isAuthenticated
+                ? guessLinks
+                : user === "5f06751d12d3916ccc508cdc"
+                ? ownerLinks
+                : authLinks}
+            </Fragment>
           )}
         </nav>
       </div>

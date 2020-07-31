@@ -133,9 +133,9 @@ const Header = ({ auth: { isAuthenticated, loading, user }, logout }) => {
           </button>
           {!loading && (
             <Fragment>
-              {!isAuthenticated
+              {!isAuthenticated || !user
                 ? guessLinks
-                : user === "5f06751d12d3916ccc508cdc"
+                : user._id === "5f06751d12d3916ccc508cdc"
                 ? ownerLinks
                 : authLinks}
             </Fragment>
